@@ -1,0 +1,156 @@
+@font-face {
+  font-family: inter;
+  src: url(/assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+:root{
+  /*Primary*/
+  --soft-orange:rgb(233, 171, 83);
+  --soft-red: rgb(241, 94, 80);
+  /*Neutral*/
+  --offwhite: 	rgb(255, 253, 250);
+  --Greylish-blue: rgb(197, 198, 206);
+  --Dark-greylishblue: 	rgb(93, 95, 121);
+  --thick-dark-blue: rgb(0, 0, 26);
+  /*font*/
+  --font-size: 15px;
+}
+
+body{
+  min-height: 100dvh;
+  width: 80%;
+  margin: auto;
+  background-color: var(--offwhite);
+  font-family: inter, sans-serif;
+}
+
+p{
+  font-size: var(--font-size);
+  font-weight: 400;
+  color: var(--Dark-greylishblue);
+  line-height: 3.2vh;
+ 
+}
+header, nav ul{
+  height: 12vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+nav ul {
+  gap: 2.5em;
+  
+} 
+li{
+  font-size: var(--font-size);
+  font-weight: 400;
+  color: var(--Dark-greylishblue);
+}
+
+li:hover, li:focus{
+  color: var(--soft-orange);
+}
+.first-sec{
+  margin-top: 1em;
+  display: flex;
+  
+}
+
+
+.hook-pic{
+  width: 95%;
+  height: 40%;
+  object-fit: cover;
+}
+.hook-info{
+  height: 30vh;
+  display: flex;
+  gap: 5e
+  margin-top: 1.5em;
+}
+#hook-header{ 
+  font-size: 50px;
+  font-weight: 800;
+  line-height: 7vh;
+
+}
+.hook-text p{
+  margin-top: .5em;
+  margin-right: 4em;
+}
+.button{
+  color: var(--offwhite);
+  font-size: 1rem;
+  font-weight: 700;
+  text-align: center;
+  background-color: var(--thick-dark-blue);
+  padding: 1em 5em;
+  margin-top: 2em;
+  border: none;
+}
+.sidebar{
+  height: 55vh;
+  width: 60%;
+  padding: 1.5em;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: var(--thick-dark-blue);
+} 
+
+.sidebar h2{
+  font-size: 30px;
+  font-weight: 800;
+  color: var(--soft-orange);
+  margin-bottom: .5em;
+}
+
+.sidebar-text{
+  border-bottom: .1px solid rgb(255, 253, 250, .6);
+  padding-bottom: 20px;
+}
+
+.sidebar-text:has(.last){
+  border: none;
+}
+.subheader{
+  color: var(--offwhite);
+  margin: .5em 0;
+}
+
+.newspages{
+  display: flex;
+  justify-content: space-evenly;
+  gwap: 5em;
+  margin-top: -6em;
+  margin-bottom: 2.5em;
+}  
+.newspage-content{
+  width: 400px;
+  display: flex;
+  gap: 1.5em;
+}
+
+.news-img{
+  width: 35%;
+}
+.blk{
+  color: var(--thick-dark-blue);
+}
+
+span{
+  font-size: 30px;
+  font-weight: 700;
+  color: var(--Greylish-blue);
+}
+.news p{
+  /* width: 80%; */
+  margin-right: 4em;
+}
