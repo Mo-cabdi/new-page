@@ -5,7 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  <link rel="stylesheet" href="/style/style.cssgit">
+  <link rel="stylesheet" href="/style/style.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   
   <title>Frontend Mentor | News homepage</title>
 
@@ -19,7 +20,7 @@
   <header>
     <img src="assets/images/logo.svg" alt="W-logo" class="logo">
     <nav>
-      <ul>
+      <ul class="large-screen__nav" id="navBar">
         <li>Home</li>
         <li>New</li>
         <li>Populer</li>
@@ -27,27 +28,45 @@
         <li>Categories</li>
       </ul>
     </nav>
+
+    <i class='bx bx-menu' id="menu-icon"></i>
+
+    <!-- <ul class="small-screen__nav-menu">
+      <li>Home</li>
+      <li>New</li>
+      <li>Populer</li>
+      <li>Trending</li>
+      <li>Categories</li>
+    </ul> -->
     <!-- <img src="assets/images/icon-menu.svg" alt="menu-icon" class="menu-icon"> -->
   </header>
   
-  <main class="container">
-  
-    
-      <img src="assets/images/image-web-3-desktop.jpg" alt="hero-img"  class="hook-pic">
+   <!-- <main class="container">
+    <div class="hook-and-sidebar">
+      <div class="hook-content">
+      <div class="hook-img">
+        <img src="assets/images/image-web-3-desktop.jpg" alt="hero-img">
+      </div>
+     
   
       <div class="hook-info">
-        <h1 id="hook-header">The Bright Future of Web 3.0?</h1>
-  
+        <div class="hook-header">
+          The Bright Future of Web 3.0?
+        </div>
+        <div class="hook-text">
           <p>
             We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
           But is it really fulfilling its promise?
           </p>
   
-          <p class="button">Read more</p>
+          <button class="button">Read more</button>
+        </div>
+          
       </div>
-        
+    </div>
+
     <div class="sidebar">
-        <h2 id="sidebar-header">New</h2>
+        <div class="sidebar-header">New</div>
   
         <div class="sidebar-text">
           <h3 class="subheader">Hydrogen VS Electric Cars</h3>
@@ -59,12 +78,14 @@
         <p>What are the possible adverse effects of on-demand AI image generation?</p>
         </div>
   
-        <div>
-          <h3 class="subheader">Is VC Funding Drying Up?</h3>
+        <div class="sidebar-text">
+          <h3 class="subheader last">Is VC Funding Drying Up?</h3>
         <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
         </div>
         
     </div>
+    </div>
+    
         
     <div class="newspages">
       <div class="newspage-content">
@@ -92,10 +113,12 @@
     
    
   </main>
-  
-  <div class="attribution">
+   -->
+  <!--<div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
-  </div>
+  </div> -->
+
+  <script src="/script/script.js"></script>
 </body>
 </html>
